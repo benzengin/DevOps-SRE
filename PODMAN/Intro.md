@@ -1,6 +1,6 @@
-INTRODUCTION
+# **INTRODUCTION**
 
-### Podman:
+## Podman:
 
 -New container engine
 -Developed by RedHat
@@ -11,14 +11,14 @@ INTRODUCTION
 -Kubernetes interoperability
 -Generate systemd unit files
 
-###Understanding Containers and PODs
+## Understanding Containers and PODs**
 
 -What's a container?
 Linux containers are technologies that allow you to package and isolate applications with their
 entire runtime environment -- all of the files necessary to run. This makes it easy to move the contained
 application between environments (dev, test, production, etc.) while retaining full functionality.
 
--> Key container components <-
+### Key container components <-
 
 APPLICATIONS:
 The application(s) you wish to run. You can run more than one application per container, but most folks
