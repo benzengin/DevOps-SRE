@@ -54,6 +54,12 @@ SHELL=/bin/bash
 LANG=en_US.UTF-8  
 MAIL=/var/spool/mail/a_user***  
 
+### An introduction into Bash Functions  
+
+**What Is a Bash Function?**  
+Simply put, a function in Bash (or pretty much any programming language)  
+is used to group code in a logical way.  
+
 
 
 
