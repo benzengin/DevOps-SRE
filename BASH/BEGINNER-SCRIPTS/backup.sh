@@ -9,6 +9,6 @@ echo "Creating backup directory" && mkdir $BACKUP_TARGET 2> /dev/null || echo "D
 
 echo "Copying Files" $$ cp -v $BACKUP_LOC $BACKUP_TARGET > LOGFILE 2>&1
 
-grep -i denied log_file | tail -n 2
+grep -i denied $LOGFILE | tail -n 2
 
 exit 127
