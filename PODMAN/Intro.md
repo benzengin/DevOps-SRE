@@ -1,15 +1,15 @@
 # **INTRODUCTION**
 
-## Podman:
+## Podman:  
 
--New container engine
--Developed by RedHat
--Docker replacement
--Default for RHEL distributions
--OCI (open container initiative) containers
--No daemon!
--Kubernetes interoperability
--Generate systemd unit files
+-New container engine  
+-Developed by RedHat  
+-Docker replacement  
+-Default for RHEL distributions  
+-OCI (open container initiative) containers  
+-No daemon!  
+-Kubernetes interoperability  
+-Generate systemd unit files  
 
 ## Understanding Containers and PODs
 
@@ -39,13 +39,13 @@ A container runtime executes and manages container images on a server.
 
 **What is contianer orchestration?**  
 Container orchestration automates the deployment, management, scaling, and networking of containers, making larger 
-container environments easier to manage.
+container environments easier to manage.  
 
-Examples:
--Kubernetes
--OpenShift
--Docker Swarm
--Cloud (AWS, Azure, GCP, etc.)
+Examples:  
+-Kubernetes  
+-OpenShift  
+-Docker Swarm  
+-Cloud (AWS, Azure, GCP, etc.)  
 
 **What's a pod?**  
 
@@ -90,19 +90,19 @@ As demand for your pod's service(s) increases, you just deploy additional pods.
 
 **What is Podman?**  
 
--Default container engine in RHEL
--Develop, run, and manage OCI containers
--No daemon
--Kubernetes interoperability
--Create systemd containers with Podman
+-Default container engine in RHEL  
+-Develop, run, and manage OCI containers  
+-No daemon  
+-Kubernetes interoperability  
+-Create systemd containers with Podman  
 $alias docker=podman
 
 **What is Skopeo?**  
 
--Command-line utility that performs various operations on container images and image repositories
--Can be used by non-root users
--Doesn't require a daemon
--Works with both OCI and Docker v2 container images
+-Command-line utility that performs various operations on container images and image repositories  
+-Can be used by non-root users  
+-Doesn't require a daemon  
+-Works with both OCI and Docker v2 container images  
 
 **What is Buildah?**  
 Buildah is a command-line tool for building Open Container Initiative-compatible (that means Docker- and Kubernetes-compatible, too)
@@ -111,13 +111,24 @@ a traditional Dockerfile) but is flexible enough to allow you to build images wi
 incorporate into scripts and build pipelines, and best of all, it doesn't require a running container daemon to build its image.
 
 **Key Commands**  
-$podman
+**$podman**  
 Used to directly manage containers and container images on Linux
 
-$skopeo
+**$skopeo**  
 Used to inspect, copy, delete, and sign container images and manage image repositories
 
-$buildah
+**$buildah**  
 Used to create new container images, without a daemon
 
-**Podman only runs on Linux systems, it requires no daemon, local repository is /var/lib/containers and supports rootless containers**
+**Podman only runs on Linux systems, it requires no daemon, local repository is /var/lib/containers and supports rootless containers**  
+
+## Kubernetes Interoperability ##  
+**Podman** can capture the configuration of local **containers** and **pods**, then output this configuration information as a **YAML file**  
+that can be imported to **Kubernetes**, allowing you to leverage the advanced features of **Kubernetes**.  
+
+## Podman - systemd Containers ##  
+**Podman can accelerate container deployment using systemd.**  
+You can use existing **Podman containers** to generate **systemd** unit files, then use them to deploy **persistent root or rootless containers and pods**
+using **pods** using **systemd**.  
+
+
