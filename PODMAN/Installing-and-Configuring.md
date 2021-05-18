@@ -45,3 +45,58 @@ $sudo yum module reset container-tools
 **Check the installed Podman version:**  
 $podman --version  
 
+<pre>[vagrant@centos8 ~]$ podman --version
+podman version 2.2.1
+[vagrant@centos8 ~]$ ls -al /etc/containers
+total 32
+drwxr-xr-x.  5 root root  114 May 16 09:31 <font color="#0087FF">.</font>
+drwxr-xr-x. 83 root root 8192 May 18 11:05 <font color="#0087FF">..</font>
+drwxr-xr-x.  2 root root    6 Feb 22 04:52 <font color="#0087FF">certs.d</font>
+drwxr-xr-x.  3 root root   21 May 16 09:31 <font color="#0087FF">oci</font>
+-rw-r--r--.  1 root root  256 Feb 22 04:52 policy.json
+-rw-r--r--.  1 root root 5945 Feb 22 04:52 registries.conf
+drwxr-xr-x.  2 root root   26 May 16 09:31 <font color="#0087FF">registries.d</font>
+-rw-r--r--.  1 root root 7803 Feb 22 04:52 storage.conf
+</pre>  
+
+**Check the default registries:**  
+$vi /etc/containers/registries.conf  
+
+<pre><font color="#34E2E2"># To ensure compatibility with docker we&apos;ve included docker.io in the default search list. However Red Hat</font>
+<font color="#34E2E2"># does not curate, patch or maintain container images from the docker.io registry.</font>
+[registries.search]
+registries = [<font color="#AD7FA8">&apos;registry.access.redhat.com&apos;</font>, <font color="#AD7FA8">&apos;registry.redhat.io&apos;</font>, <font color="#AD7FA8">&apos;docker.io&apos;</font>]
+</pre>  
+
+**Check the Storage configuration:**  
+$vi /etc/containers/storage.conf  
+
+<pre><font color="#34E2E2"># This file is is the configuration file for all tools</font>
+<font color="#34E2E2"># that use the containers/storage library.</font>
+<font color="#34E2E2"># See man 5 containers-storage.conf for more information</font>
+<font color="#34E2E2"># The &quot;container storage&quot; table contains all of the server options.</font>
+[storage]
+
+<font color="#34E2E2"># Default Storage Driver</font>
+driver = <font color="#AD7FA8">&quot;overlay&quot;</font>
+
+<font color="#34E2E2"># Temporary storage location</font>
+runroot = <font color="#AD7FA8">&quot;/var/run/containers/storage&quot;</font>
+
+<font color="#34E2E2"># Primary Read/Write location of container storage</font>
+graphroot = <font color="#AD7FA8">&quot;/var/lib/containers/storage&quot;</font>
+
+<font color="#34E2E2"># Storage path for rootless users</font>
+<font color="#34E2E2">#</font>
+<font color="#34E2E2"># rootless_storage_path = &quot;$HOME/.local/share/containers/storage&quot;</font>
+
+[storage.options]
+<font color="#34E2E2"># Storage options to be passed to underlying storage drivers</font>
+
+<font color="#34E2E2"># AdditionalImageStores is used to pass paths to additional Read/Only image stores</font>
+<font color="#34E2E2"># Must be comma separated list.</font>
+additionalimagestores = [
+]
+
+</pre>  
+
