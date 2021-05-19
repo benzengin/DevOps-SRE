@@ -217,4 +217,24 @@ CONTAINER ID  IMAGE                         COMMAND               CREATED       
 
 **IMPORTANT: ADD THE LOCAL REGISTRY TO THE REGISTRIES.CONF FILE AND RESTART PODMAN!**   
 
+**HOW TO PUSH AN IMAGE TO THE LOCAL REGISTRY:**  
+<pre>[vagrant@centos8 ~]$ podman login localhost:5000
+Username: vagrant 
+Password: 
+Login Succeeded!
+[vagrant@centos8 ~]$ podman tag registry.access.redhat.com/ubi8/ubi:latest localhost:5000/ubi8/ubi
+[vagrant@centos8 ~]$ podman images
+REPOSITORY                           TAG     IMAGE ID      CREATED      SIZE
+registry.access.redhat.com/ubi8/ubi  latest  613e5da7a934  4 weeks ago  213 MB
+localhost/ubi8                       latest  613e5da7a934  4 weeks ago  213 MB
+localhost:5000/ubi8/ubi              latest  613e5da7a934  4 weeks ago  213 MB
+[vagrant@centos8 ~]$ podman push localhost:5000/ubi8/ubi:latest
+Getting image source signatures
+Copying blob 476579af086a skipped: already exists  
+Copying blob 1e8cd6732429 [--------------------------------------] 0.0b / 0.0b
+Copying config 613e5da7a9 [======================================] 4.3KiB / 4.3KiB
+Writing manifest to image destination
+Storing signatures
+</pre>  
+
 
