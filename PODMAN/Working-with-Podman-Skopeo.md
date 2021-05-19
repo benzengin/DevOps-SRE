@@ -215,4 +215,6 @@ CONTAINER ID  IMAGE                         COMMAND               CREATED       
 9026288c2e90  docker.io/library/registry:2  /etc/docker/regis...  59 seconds ago  Up 58 seconds ago  0.0.0.0:5000-&gt;5000/tcp  po-registry
 </pre>  
 
+**IMPORTANT: ADD THE LOCAL REGISTRY TO THE REGISTRIES.CONF FILE AND RESTART PODMAN!**   
+
 
