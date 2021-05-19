@@ -255,5 +255,33 @@ REPOSITORY  TAG     IMAGE ID  CREATED  SIZE
 **skopeo:**  
 Used to inspect, copy, delete, and sign container images and manage image repositories.  
 
+<pre>[vagrant@centos8 ~]$ skopeo --version
+skopeo version 1.2.0
+[vagrant@centos8 ~]$ skopeo inspect --help
+Return low-level information about &quot;IMAGE-NAME&quot; in a registry/transport
+Supported transports:
+containers-storage, dir, docker, docker-archive, docker-daemon, oci, oci-archive, ostree, tarball
+
+See skopeo(1) section &quot;IMAGE NAMES&quot; for the expected format
+
+Usage:
+skopeo inspect [command options] IMAGE-NAME
+
+Examples:
+skopeo inspect docker://docker.io/fedora
+
+Flags:
+      --authfile string             path of the authentication file. Default is ${XDG_RUNTIME_DIR}/containers/auth.json
+      --cert-dir PATH               use certificates at PATH (*.crt, *.cert, *.key) to connect to the registry or daemon
+      --config                      output configuration
+      --creds USERNAME[:PASSWORD]   Use USERNAME[:PASSWORD] for accessing the registry
+      --daemon-host HOST            use docker daemon host at HOST (docker-daemon: only)
+  -h, --help                        help for inspect
+      --no-creds                    Access the registry anonymously
+      --raw                         output raw manifest or configuration
+      --registry-token string       Provide a Bearer token for accessing the registry
+      --retry-times int             the number of times to possibly retry
+      --shared-blob-dir DIRECTORY   DIRECTORY to use to share blobs across OCI repositories
+</pre>  
 
 
