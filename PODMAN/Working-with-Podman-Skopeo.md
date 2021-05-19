@@ -203,3 +203,4 @@ registry.access.redhat.com/ubi8/ubi  latest  613e5da7a934  4 weeks ago  213 MB
 localhost/ubi8                       latest  613e5da7a934  4 weeks ago  213 MB
 </pre>
 
+**HOW TO HOST A PODMAN IMAGE REGISTRY**  
