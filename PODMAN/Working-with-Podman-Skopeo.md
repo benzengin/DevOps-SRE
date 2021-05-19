@@ -204,3 +204,15 @@ localhost/ubi8                       latest  613e5da7a934  4 weeks ago  213 MB
 </pre>
 
 **HOW TO HOST A PODMAN IMAGE REGISTRY**  
+
+<pre>[vagrant@centos8 ~]$ sudo mkdir -p /var/lib/registry
+[vagrant@centos8 ~]$ sudo podman run --privileged -d --name po-registry -p 5000:5000 -v /var/lib/registry:/var/lib/registry --restart=always registry:2
+9026288c2e90e9904a28e9cc81fdca703a85b404b45fcfac30ab2852a09cf510
+[vagrant@centos8 ~]$ sudo vi /etc/containers/registries.conf
+[vagrant@centos8 ~]$ sudo systemctl restart podman
+[vagrant@centos8 ~]$ sudo podman ps -a
+CONTAINER ID  IMAGE                         COMMAND               CREATED         STATUS             PORTS                   NAMES
+9026288c2e90  docker.io/library/registry:2  /etc/docker/regis...  59 seconds ago  Up 58 seconds ago  0.0.0.0:5000-&gt;5000/tcp  po-registry
+</pre>  
+
+
