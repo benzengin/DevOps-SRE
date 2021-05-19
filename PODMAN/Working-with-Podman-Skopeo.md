@@ -191,4 +191,15 @@ ly supports Red Hat technologies through subscriptions for Red Hat products. Thi
             &quot;Name&quot;: &quot;overlay&quot;,
 </pre>  
 
+**HOW TO TAG AN IMAGE:**  
+
+<pre>[vagrant@centos8 ~]$ podman images
+REPOSITORY                           TAG     IMAGE ID      CREATED      SIZE
+registry.access.redhat.com/ubi8/ubi  latest  613e5da7a934  4 weeks ago  213 MB
+[vagrant@centos8 ~]$ podman tag ubi:latest ubi8
+[vagrant@centos8 ~]$ podman images
+REPOSITORY                           TAG     IMAGE ID      CREATED      SIZE
+registry.access.redhat.com/ubi8/ubi  latest  613e5da7a934  4 weeks ago  213 MB
+localhost/ubi8                       latest  613e5da7a934  4 weeks ago  213 MB
+</pre>
 
