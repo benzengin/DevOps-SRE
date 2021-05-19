@@ -252,4 +252,8 @@ REPOSITORY  TAG     IMAGE ID  CREATED  SIZE
 
 ## How to use SKOPEO:  
 
+**skopeo:**  
+Used to inspect, copy, delete, and sign container images and manage image repositories.  
+
+
 
