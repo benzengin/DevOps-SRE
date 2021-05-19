@@ -311,6 +311,50 @@ Writing manifest to image destination
 Storing signatures
 <font color="#06989A">INFO</font>[0001] Synced 1 images from 1 sources  </pre>  
 
+**HOW TO GET MORE INFORMATION ABOUT CONTAINER IMAGE:**  
+
+<pre>[vagrant@centos8 ~]$ skopeo inspect docker://localhost:5000/ubi7/ubi:latest
+{
+    &quot;Name&quot;: &quot;localhost:5000/ubi7/ubi&quot;,
+    &quot;Digest&quot;: &quot;sha256:392880458a10e57d3a170cc0fb7fce952d2dd155565b272e2e312a6b3f90488b&quot;,
+    &quot;RepoTags&quot;: [
+        &quot;latest&quot;
+    ],
+    &quot;Created&quot;: &quot;2021-04-20T04:03:36.940614Z&quot;,
+    &quot;DockerVersion&quot;: &quot;1.13.1&quot;,
+    &quot;Labels&quot;: {
+        &quot;architecture&quot;: &quot;x86_64&quot;,
+        &quot;build-date&quot;: &quot;2021-04-20T04:03:11.668794&quot;,
+        &quot;com.redhat.build-host&quot;: &quot;cpt-1002.osbs.prod.upshift.rdu2.redhat.com&quot;,
+        &quot;com.redhat.component&quot;: &quot;ubi7-container&quot;,
+        &quot;com.redhat.license_terms&quot;: &quot;https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI&quot;,
+        &quot;description&quot;: &quot;The Universal Base Image is designed and engineered to be the base layer for all of your containerized applications, middleware and utilities. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.&quot;,
+        &quot;distribution-scope&quot;: &quot;public&quot;,
+        &quot;io.k8s.description&quot;: &quot;The Universal Base Image is designed and engineered to be the base layer for all of your containerized applications, middleware and utilities. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.&quot;,
+        &quot;io.k8s.display-name&quot;: &quot;Red Hat Universal Base Image 7&quot;,
+        &quot;io.openshift.tags&quot;: &quot;base rhel7&quot;,
+        &quot;name&quot;: &quot;ubi7&quot;,
+        &quot;release&quot;: &quot;372&quot;,
+        &quot;summary&quot;: &quot;Provides the latest release of the Red Hat Universal Base Image 7.&quot;,
+        &quot;url&quot;: &quot;https://access.redhat.com/containers/#/registry.access.redhat.com/ubi7/images/7.9-372&quot;,
+        &quot;vcs-ref&quot;: &quot;a4e710a688a6374670ecdd56637c3f683d11cbe3&quot;,
+        &quot;vcs-type&quot;: &quot;git&quot;,
+        &quot;vendor&quot;: &quot;Red Hat, Inc.&quot;,
+        &quot;version&quot;: &quot;7.9&quot;
+    },
+    &quot;Architecture&quot;: &quot;amd64&quot;,
+    &quot;Os&quot;: &quot;linux&quot;,
+    &quot;Layers&quot;: [
+        &quot;sha256:cd50c1c5fe4a03fb64368f18720df651ef9b17fa71955af2b1a45d7f6eb23dee&quot;,
+        &quot;sha256:de10d63efa9ceabd041f633b48d5405a58fbd4d7521fe9f693c9d24d72380b7f&quot;
+    ],
+    &quot;Env&quot;: [
+        &quot;PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin&quot;,
+        &quot;container=oci&quot;
+    ]
+}
+</pre>  
+
 
 
 
