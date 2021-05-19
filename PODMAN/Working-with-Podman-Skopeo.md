@@ -2,13 +2,12 @@
 
 ## Key Commands
 
+## PODMAN 
+
 **podman**  
-Used to directly manage containers and container images on Linux  
+Used to directly manage containers and container images on Linux    
 
-**skopeo**
-Used to inspect, copy, delete, and sign container images and manage image repositories  
-
-## Example Scenario:
+## How to use PODMAN:
 
 <pre>[vagrant@centos8 ~]$ podman --version
 podman version 2.2.1
@@ -191,4 +190,5 @@ ly supports Red Hat technologies through subscriptions for Red Hat products. Thi
         &quot;GraphDriver&quot;: {
             &quot;Name&quot;: &quot;overlay&quot;,
 </pre>  
+
 
