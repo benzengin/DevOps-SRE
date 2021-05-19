@@ -285,4 +285,18 @@ Flags:
 </pre>  
 
 **HOW TO USE SKOPEO TO COPY AN IMAGE FROM REGISTRY TO ANOTHER:**  
+<pre>[vagrant@centos8 ~]$ skopeo login localhost:5000
+Username: vagrant
+Password: 
+Login Succeeded!
+[vagrant@centos8 ~]$ skopeo copy docker://registry.access.redhat.com/ubi7/ubi:latest docker://localhost:5000/ubi7/ubi:latest
+Getting image source signatures
+Copying blob de10d63efa9c done  
+Copying blob cd50c1c5fe4a done  
+Copying config 899998a87b done  
+Writing manifest to image destination
+Storing signatures
+</pre>  
+
+
 
