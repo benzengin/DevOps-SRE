@@ -59,7 +59,7 @@ Examples:
 
 </pre>  
 
-**Search an image:**  
+**SEARCH AN IMAGE:**  
 <pre>[vagrant@centos8 ~]$ podman search ubi:latest
 INDEX       NAME                                               DESCRIPTION                                      STARS   OFFICIAL  AUTOMATED
 redhat.com  registry.access.redhat.com/ubi8/ubi                Provides the latest release of the Red Hat U...  0                 
@@ -89,7 +89,7 @@ redhat.io   registry.redhat.io/ubi7/ubi-minimal                The Universal Bas
 redhat.io   registry.redhat.io/ubi7/ubi-init                   The Universal Base Image Init is designed to...  0                 
 redhat.io   registry.redhat.io/ubi8/dotnet-21-runtime          Provides the latest release of Red Hat Enter...  0               </pre>  
 
-**Grab an image:**  
+**GRAB AN IMAGE:**  
 <pre>[vagrant@centos8 ~]$ podman search ubi:latest
 INDEX       NAME                                               DESCRIPTION                                      STARS   OFFICIAL  AUTOMATED
 redhat.com  registry.access.redhat.com/ubi8/ubi                Provides the latest release of the Red Hat U...  0                 
@@ -132,7 +132,7 @@ REPOSITORY                           TAG     IMAGE ID      CREATED      SIZE
 registry.access.redhat.com/ubi8/ubi  latest  613e5da7a934  4 weeks ago  213 MB
 </pre>   
 
-**Inspect an image**  
+**INSPECT AN IMAGE:**  
 <pre>[vagrant@centos8 ~]$ podman inspect 613e5da7a934 |more
 [
     {
