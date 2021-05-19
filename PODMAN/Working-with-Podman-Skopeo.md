@@ -298,5 +298,19 @@ Writing manifest to image destination
 Storing signatures
 </pre>  
 
+**HOW TO SYNC AN IMAGE FROM SRC TO DEST:**  
+
+<pre>[vagrant@centos8 ~]$ skopeo sync --src docker --dest docker --scoped registry.access.redhat.com/ubi7/ubi:latest localhost:5000/ubi7/ubi
+<font color="#06989A">INFO</font>[0000] Tag presence check                            <font color="#06989A">imagename</font>=&quot;registry.access.redhat.com/ubi7/ubi:latest&quot; <font color="#06989A">tagged</font>=true
+<font color="#06989A">INFO</font>[0000] Copying image tag 1/1                         <font color="#06989A">from</font>=&quot;docker://registry.access.redhat.com/ubi7/ubi:latest&quot; <font color="#06989A">to</font>=&quot;docker://localhost:5000/ubi7/ubi/registry.access.redhat.com/ubi7/ubi:latest&quot;
+Getting image source signatures
+Copying blob cd50c1c5fe4a skipped: already exists  
+Copying blob de10d63efa9c [--------------------------------------] 0.0b / 0.0b
+Copying config 899998a87b done  
+Writing manifest to image destination
+Storing signatures
+<font color="#06989A">INFO</font>[0001] Synced 1 images from 1 sources  </pre>  
+
+
 
 
