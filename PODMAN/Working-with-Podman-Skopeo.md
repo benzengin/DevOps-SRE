@@ -237,4 +237,17 @@ Writing manifest to image destination
 Storing signatures
 </pre>  
 
+**HOW TO UNTAG AND DELETE AN IMAGE:**  
+
+<pre>[vagrant@centos8 ~]$ podman untag ubi8
+[vagrant@centos8 ~]$ podman images
+REPOSITORY  TAG     IMAGE ID      CREATED      SIZE
+&lt;none&gt;      &lt;none&gt;  613e5da7a934  4 weeks ago  213 MB
+[vagrant@centos8 ~]$ podman rmi 613e5da7a934
+Deleted: 613e5da7a934e1963e37ed935917e8be6b8dfd90cac73a724ddc224fbf16da20
+[vagrant@centos8 ~]$ podman image list
+REPOSITORY  TAG     IMAGE ID  CREATED  SIZE
+[vagrant@centos8 ~]$ 
+</pre>  
+
 
