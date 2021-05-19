@@ -356,5 +356,16 @@ Storing signatures
 </pre>  
 
 
+**HOW TO LIST THE TAGS ON AN SPECIFIC IMAGE:**  
+
+<pre>[vagrant@centos8 ~]$ skopeo list-tags docker://localhost:5000/ubi7/ubi
+{
+    &quot;Repository&quot;: &quot;localhost:5000/ubi7/ubi&quot;,
+    &quot;Tags&quot;: [
+        &quot;latest&quot;
+    ]
+}
+</pre>  
+
 
 
