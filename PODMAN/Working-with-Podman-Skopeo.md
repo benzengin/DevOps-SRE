@@ -250,4 +250,6 @@ REPOSITORY  TAG     IMAGE ID  CREATED  SIZE
 [vagrant@centos8 ~]$ 
 </pre>  
 
+## How to use SKOPEO:  
+
 
