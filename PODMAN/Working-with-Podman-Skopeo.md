@@ -284,4 +284,5 @@ Flags:
       --shared-blob-dir DIRECTORY   DIRECTORY to use to share blobs across OCI repositories
 </pre>  
 
+**HOW TO USE SKOPEO TO COPY AN IMAGE FROM REGISTRY TO ANOTHER:**  
 
