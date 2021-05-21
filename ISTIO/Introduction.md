@@ -47,3 +47,9 @@ Envoy Proxy is capable of being deployed into many different types of cluster. T
 **Istio Simplifies Envoy**
 -Istio understands Kubernetes
 -You can use regular Kubernetes yaml (via CRDs) which get transformed into Envoy configuration automatically ...
+
+## THE CONTROL PLANE 
+
+**What is Galley?**  
+Galley reads in our kubernetes yaml and transforms it into a terminal structure that Istio understands.
+This means that Istio can work with non Kubernetes environments (such as consul).
