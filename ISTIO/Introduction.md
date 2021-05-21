@@ -27,4 +27,10 @@ Istio is going to inject, or add, its own container for each pod in your system.
 a container. In Istio, things are set up so that the network request from the container is going to routed to its proxy. The mesh logic
 can be implemented with the Proxy. Istio will have done some IP tables configuration on the container so the contianer thinks it's making a remote call
 but actually, it's just calling the proxy. So it's at this point then that the proxy can inject the mesh logic. So the proxy then is
-responsible for relaying that call to the target
+responsible for relaying that call to the target pod's proxy but ultimately, the target container is going to receive that call. And it's possible 
+that this container, it's results of this request, needs to call a container in another pod. **Service Mesh** is implemented as proxys that are
+placed inside every pod. The **proxy** cann add in any logic that we like as a result of a request being made from one **container** to another.
+
+### The Proxies are collectively called the "Data Plane" in Istio
+### Everything else is called the "Control Plane"
+
