@@ -31,6 +31,15 @@ responsible for relaying that call to the target pod's proxy but ultimately, the
 that this container, it's results of this request, needs to call a container in another pod. **Service Mesh** is implemented as proxys that are
 placed inside every pod. The **proxy** cann add in any logic that we like as a result of a request being made from one **container** to another.
 
-### The Proxies are collectively called the "Data Plane" in Istio
+### The Proxies (or sidecar) are collectively called the "Data Plane" in Istio
 ### Everything else is called the "Control Plane"
+
+## ARCHITECTURE
+
+### PROXIES:
+
+The way Istio implements service mesh is by using **proxies**. The **proxy** in Istio comes from an open source project called **Envoy**.
+Envoy is just a proxy for cluster-based applications.
+
+
 
