@@ -41,5 +41,9 @@ placed inside every pod. The **proxy** cann add in any logic that we like as a r
 The way Istio implements service mesh is by using **proxies**. The **proxy** in Istio comes from an open source project called **Envoy**.
 Envoy is just a proxy for cluster-based applications.
 
+**Why not use Envoy instead of Istio?**
+Envoy Proxy is capable of being deployed into many different types of cluster. That means it has a massive and complex terminology of its own ...
 
-
+**Istio Simplifies Envoy**
+-Istio understands Kubernetes
+-You can use regular Kubernetes yaml (via CRDs) which get transformed into Envoy configuration automatically ...
