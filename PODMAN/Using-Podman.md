@@ -191,3 +191,16 @@ CONTAINER ID  IMAGE                                     COMMAND               CR
 CONTAINER ID  IMAGE   COMMAND  CREATED  STATUS  PORTS   NAMES
 [vagrant@centos8 ~]$ 
 </pre>  
+
+<pre>[vagrant@centos8 ~]$ podman images
+REPOSITORY                         TAG     IMAGE ID      CREATED       SIZE
+docker.io/centos/httpd-24-centos8  latest  7d2fe0e482ba  9 months ago  441 MB
+[vagrant@centos8 ~]$ podman rmi httpd-24-centos8:latest
+Untagged: docker.io/centos/httpd-24-centos8:latest
+Deleted: 7d2fe0e482baf01e8a54f6c633bb2b5a89b3f35d278458c5ed73f3fdcc5646aa
+[vagrant@centos8 ~]$ podman images
+REPOSITORY  TAG     IMAGE ID  CREATED  SIZE
+[vagrant@centos8 ~]$ 
+</pre>  
+
+
