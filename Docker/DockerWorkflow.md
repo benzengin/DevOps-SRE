@@ -1,3 +1,28 @@
+<pre><font color="#8AE234"><b>vagrant@Yoshitaka-Zombie</b></font>:<font color="#729FCF"><b>~</b></font>$ systemctl status docker
+<font color="#8AE234"><b>●</b></font> docker.service - Docker Application Container Engine
+     Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
+     Active: <font color="#8AE234"><b>active (running)</b></font> since Tue 2021-08-03 14:28:54 UTC; 35min ago
+TriggeredBy: <font color="#8AE234"><b>●</b></font> docker.socket
+       Docs: https://docs.docker.com
+   Main PID: 737 (dockerd)
+      Tasks: 10
+     Memory: 163.6M
+     CGroup: /system.slice/docker.service
+             └─737 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+
+Aug 03 14:28:53 Yoshitaka-Zombie dockerd[737]: time=&quot;2021-08-03T14:28:53.996119520Z&quot; level=warning msg=&quot;Your kernel does not support CPU realtime scheduler&quot;
+Aug 03 14:28:53 Yoshitaka-Zombie dockerd[737]: time=&quot;2021-08-03T14:28:53.996130715Z&quot; level=warning msg=&quot;Your kernel does not support cgroup blkio weight&quot;
+Aug 03 14:28:53 Yoshitaka-Zombie dockerd[737]: time=&quot;2021-08-03T14:28:53.996139296Z&quot; level=warning msg=&quot;Your kernel does not support cgroup blkio weight_device&quot;
+Aug 03 14:28:53 Yoshitaka-Zombie dockerd[737]: time=&quot;2021-08-03T14:28:53.997359117Z&quot; level=info msg=&quot;Loading containers: start.&quot;
+Aug 03 14:28:54 Yoshitaka-Zombie dockerd[737]: time=&quot;2021-08-03T14:28:54.288212486Z&quot; level=info msg=&quot;Default bridge (docker0) is assigned with an IP address 172<span style="background-color:#FFFFFF"><font color="#3F3F3F">&gt;</font></span>
+Aug 03 14:28:54 Yoshitaka-Zombie dockerd[737]: time=&quot;2021-08-03T14:28:54.334943439Z&quot; level=info msg=&quot;Loading containers: done.&quot;
+Aug 03 14:28:54 Yoshitaka-Zombie dockerd[737]: time=&quot;2021-08-03T14:28:54.402410194Z&quot; level=info msg=&quot;Docker daemon&quot; commit=b0f5bc3 graphdriver(s)=overlay2 versi<span style="background-color:#FFFFFF"><font color="#3F3F3F">&gt;</font></span>
+Aug 03 14:28:54 Yoshitaka-Zombie dockerd[737]: time=&quot;2021-08-03T14:28:54.403150916Z&quot; level=info msg=&quot;Daemon has completed initialization&quot;
+Aug 03 14:28:54 Yoshitaka-Zombie systemd[1]: Started Docker Application Container Engine.
+Aug 03 14:28:54 Yoshitaka-Zombie dockerd[737]: time=&quot;2021-08-03T14:28:54.430510484Z&quot; level=info msg=&quot;API listen on /run/docker.sock&quot;
+</pre>
+
+
 <pre><font color="#8AE234"><b>vagrant@Yoshitaka-Zombie</b></font>:<font color="#729FCF"><b>~</b></font>$ docker version
 Client: Docker Engine - Community
  Version:           20.10.7
