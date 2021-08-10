@@ -1,2 +1,11 @@
 # DevOps-SRE
-Everything related to DevOps &amp; SRE. Only for learning purposes :)
+
+## Learn the DevOps Concepts
+
+- Version Control
+- CI/CD
+- Containers
+- Build Tools
+- Cloud - IaaS
+- Container Orchestration
+- Infrastructure as Code
