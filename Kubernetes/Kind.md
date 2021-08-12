@@ -89,3 +89,6 @@ Have a question, bug, or feature request? Let us know! https://kind.sigs.k8s.io/
 my-2nd-cluster
 my-cluster
 </pre>
+
+
+<pre><font color="#8AE234"><b>vagrant@Yoshitaka-Zombie</b></font>:<font color="#729FCF"><b>~</b></font>$ Lets delete the 2nd cluster</pre>
