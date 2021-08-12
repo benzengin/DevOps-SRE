@@ -18,3 +18,7 @@ An OTP key—a device that provides a "one time password"—can be used as your 
  
 As nouns the difference between **component** and **asset** is that **component** is a smaller, self-contained part of a larger entity often refers to a manufactured object that is part of a larger device while asset is something or someone of any value; any portion of one's property or effects so considered.
 As a adjective **component** is making up a larger whole; as a component word. 
+
+# What is an Artifact Repository?**
+
+An artifact repository is a software application designed to manage these artifacts. Using an artifact repository provides consistency to your Continuous Integration/Continuous Development (CI/CD) workflow. It saves teams time and increases build performance.
