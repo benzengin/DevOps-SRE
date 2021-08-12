@@ -14,3 +14,7 @@ Trace is a tool for troubleshooting and monitoring API proxies running on Apigee
 
 An OTP key—a device that provides a "one time password"—can be used as your two-factor authentication, and add an extra layer of security to your Dashlane account. Someone trying to access your data would need not only your Master Password, but also need access to the OTP security key you used to set up your 2FA.
 
+# What's the difference between a component and asset?
+ 
+As nouns the difference between **component** and **asset** is that **component** is a smaller, self-contained part of a larger entity often refers to a manufactured object that is part of a larger device while asset is something or someone of any value; any portion of one's property or effects so considered.
+As a adjective **component** is making up a larger whole; as a component word. 
