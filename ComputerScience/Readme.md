@@ -6,4 +6,7 @@ A SOAP message is an ordinary XML document containing the following elements −
 
 The SOAP message is validated before it is transformed into an application data structure and when a SOAP message is generated from the application data structure. The SOAP message is validated using the XML schema in the WSDL and is validated again against the transformation requirements of CICS.
 
+# What is (Apigee) Tracing?
+
+Trace is a tool for troubleshooting and monitoring API proxies running on Apigee Edge. Trace lets you probe the details of each step through an API proxy flow.
 
