@@ -92,3 +92,9 @@ my-cluster
 
 
 <pre><font color="#8AE234"><b>vagrant@Yoshitaka-Zombie</b></font>:<font color="#729FCF"><b>~</b></font>$ Lets delete the 2nd cluster</pre>
+
+<pre><font color="#8AE234"><b>vagrant@Yoshitaka-Zombie</b></font>:<font color="#729FCF"><b>~</b></font>$ kind delete cluster --name my-2nd-cluster
+Deleting cluster &quot;my-2nd-cluster&quot; ...
+<font color="#8AE234"><b>vagrant@Yoshitaka-Zombie</b></font>:<font color="#729FCF"><b>~</b></font>$ kind get clusters
+my-cluster
+</pre>
