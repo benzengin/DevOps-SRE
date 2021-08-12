@@ -47,4 +47,25 @@ NAME                       STATUS   ROLES                  AGE   VERSION
 my-cluster-control-plane   Ready    control-plane,master   47s   v1.21.1
 </pre>
 
+<pre><font color="#8AE234"><b>vagrant@Yoshitaka-Zombie</b></font>:<font color="#729FCF"><b>~</b></font>$ kind load --help
+Loads images into node from an archive or image on host
+
+Usage:
+  kind load [flags]
+  kind load [command]
+
+Available Commands:
+  docker-image  Loads docker images from host into nodes
+  image-archive Loads docker image from archive into nodes
+
+Flags:
+  -h, --help   help for load
+
+Global Flags:
+      --loglevel string   DEPRECATED: see -v instead
+  -q, --quiet             silence all stderr output
+  -v, --verbosity int32   info log verbosity
+
+Use &quot;kind load [command] --help&quot; for more information about a command.
+</pre>
 
