@@ -71,4 +71,21 @@ Use &quot;kind load [command] --help&quot; for more information about a command.
 
 <pre><font color="#8AE234"><b>vagrant@Yoshitaka-Zombie</b></font>:<font color="#729FCF"><b>~</b></font>$ Lets create another a 2nd cluster locally</pre>
 
+<pre><font color="#8AE234"><b>vagrant@Yoshitaka-Zombie</b></font>:<font color="#729FCF"><b>~</b></font>$ kind create cluster --name my-2nd-cluster
+Creating cluster &quot;my-2nd-cluster&quot; ...
+ <font color="#4E9A06">✓</font> Ensuring node image (kindest/node:v1.21.1) 🖼
+ <font color="#4E9A06">✓</font> Preparing nodes 📦  
+ <font color="#4E9A06">✓</font> Writing configuration 📜 
+ <font color="#4E9A06">✓</font> Starting control-plane 🕹️ 
+ <font color="#4E9A06">✓</font> Installing CNI 🔌 
+ <font color="#4E9A06">✓</font> Installing StorageClass 💾 
+Set kubectl context to &quot;kind-my-2nd-cluster&quot;
+You can now use your cluster with:
 
+kubectl cluster-info --context kind-my-2nd-cluster
+
+Have a question, bug, or feature request? Let us know! https://kind.sigs.k8s.io/#community 🙂
+<font color="#8AE234"><b>vagrant@Yoshitaka-Zombie</b></font>:<font color="#729FCF"><b>~</b></font>$ kind get clusters
+my-2nd-cluster
+my-cluster
+</pre>
