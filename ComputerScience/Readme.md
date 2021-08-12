@@ -10,3 +10,7 @@ The SOAP message is validated before it is transformed into an application data 
 
 Trace is a tool for troubleshooting and monitoring API proxies running on Apigee Edge. Trace lets you probe the details of each step through an API proxy flow.
 
+# What is an OTP Key?
+
+An OTP key—a device that provides a "one time password"—can be used as your two-factor authentication, and add an extra layer of security to your Dashlane account. Someone trying to access your data would need not only your Master Password, but also need access to the OTP security key you used to set up your 2FA.
+
