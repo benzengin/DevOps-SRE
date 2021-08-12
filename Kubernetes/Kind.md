@@ -71,3 +71,4 @@ Use &quot;kind load [command] --help&quot; for more information about a command.
 
 <pre><font color="#8AE234"><b>vagrant@Yoshitaka-Zombie</b></font>:<font color="#729FCF"><b>~</b></font>$ Lets create another a 2nd cluster locally</pre>
 
+
