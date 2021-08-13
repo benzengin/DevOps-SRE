@@ -15,3 +15,11 @@ Cleanup policies define the criteria that control which components get cleaned u
 **Spring framework**,
 **datetime libraries**,
 **Pdf processing libraries**
+
+# How to Buld the Artifact?
+
+- Using a Building Tool
+- Specify the programming language
+- Install dependencies
+- Compile and compress your code
+
