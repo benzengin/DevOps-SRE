@@ -11,7 +11,7 @@ Cleanup policies define the criteria that control which components get cleaned u
 - Artifact file looks different for each programming language
 
 - JAR or WAR file
-- include whole code plus dependencies
-**Spring framework**
-**datetime libraries**
+- include whole code plus dependencies: 
+**Spring framework**,
+**datetime libraries**,
 **Pdf processing libraries**
