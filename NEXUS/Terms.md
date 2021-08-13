@@ -12,6 +12,6 @@ Cleanup policies define the criteria that control which components get cleaned u
 
 - JAR or WAR file
 - include whole code plus dependencies
-Spring framework
-datetime libraries
-Pdf processing libraries
+**Spring framework**
+**datetime libraries**
+**Pdf processing libraries**
