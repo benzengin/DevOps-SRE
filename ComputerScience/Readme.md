@@ -22,3 +22,7 @@ As a adjective **component** is making up a larger whole; as a component word.
 # What is an Artifact Repository?**
 
 An artifact repository is a software application designed to manage these artifacts. Using an artifact repository provides consistency to your Continuous Integration/Continuous Development (CI/CD) workflow. It saves teams time and increases build performance.
+
+# What are legacy Systems?
+
+In computing, a legacy system is an old method, technology, computer system, or application program, "of, relating to, or being a previous or outdated computer system," yet still in use. Often referencing a system as "legacy" means that it paved the way for the standards that would follow it.
