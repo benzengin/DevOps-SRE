@@ -26,3 +26,9 @@ An artifact repository is a software application designed to manage these artifa
 # What are legacy Systems?
 
 In computing, a legacy system is an old method, technology, computer system, or application program, "of, relating to, or being a previous or outdated computer system," yet still in use. Often referencing a system as "legacy" means that it paved the way for the standards that would follow it.
+
+# What is pair programming?
+
+
+Pair programming is an agile software development technique in which two programmers work together at one workstation. One, the driver, writes code while the other, the observer or navigator, reviews each line of code as it is typed in. The two programmers switch roles frequently. 
+
