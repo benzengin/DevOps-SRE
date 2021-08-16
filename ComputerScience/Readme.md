@@ -32,3 +32,7 @@ In computing, a legacy system is an old method, technology, computer system, or 
 
 Pair programming is an agile software development technique in which two programmers work together at one workstation. One, the driver, writes code while the other, the observer or navigator, reviews each line of code as it is typed in. The two programmers switch roles frequently. 
 
+# What is penetration Testing?
+
+
+A penetration test, colloquially known as a pen test, pentest or ethical hacking, is an authorized simulated cyberattack on a computer system, performed to evaluate the security of the system; this is not to be confused with a vulnerability assessment.
