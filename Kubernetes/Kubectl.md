@@ -1,4 +1,4 @@
-<pre>WHAT IS KUBECTL?
+WHAT IS KUBECTL?
 
 You can use kubectl to deploy applications, inspect and manage them, check cluster resources, view logs, and more.
 kubectl is a command-line tool that can run from your computer, in CI/CD pipelines, as part of the operating system, or as a
@@ -7,6 +7,7 @@ Docker image. It is a very automation-friendly tool.
 kubectl looks for a configuration file named .kube in the $HOME folder. In the .kube file, kubectl stores the cluster
 configurations needed to access a Kubernetes cluster. You can also set the KUBECONFIG environment variable or use the --
 kubeconfig flag to point to the kubeconfig file.
+
 
 KUBECTL COMMANDS:
 
@@ -36,6 +37,8 @@ edit: Edit a resource—for example, edit a deployment.
 
 delete: Delete resources by filenames, stdin, resources, and names, or by resources and label selectors.
 
+
+
 DEPLOY COMMANDS:
 
 The following are kubectl deploy commands:
@@ -45,9 +48,9 @@ rollout: Manage the rollout of a resource.
 scale: Set a new size for a deployment, ReplicaSet, or StatefulSet.
 
 autoscale: Auto-scale a deployment, ReplicaSet, or StatefulSet.
-</pre>
 
-<pre>CLUSTER MANAGEMENT COMMANDS:
+
+CLUSTER MANAGEMENT COMMANDS:
 
 The following are the kubectl cluster management commands:
 
@@ -83,9 +86,9 @@ proxy: Run a proxy to the Kubernetes API server.
 cp: Copy files and directories to and from containers.
 
 auth: Inspect authorization.
-</pre>
 
-<pre>ADVANCED COMMANDS: 
+
+ADVANCED COMMANDS: 
 
 The following are the kubectl advanced commands:
 
@@ -128,4 +131,3 @@ config: Modify kube-config files.
 plugin: Provide utilities for interacting with plugins.
 
 version: Print the client and server version information.
-</pre>
