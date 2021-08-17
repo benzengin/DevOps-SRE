@@ -44,3 +44,14 @@ A permalink or permanent link is a URL that is intended to remain unchanged for 
 # What is SPIKE (software engineering)
 
 A spike is a product development method originating from Extreme Programming that uses the simplest possible program to explore potential solutions. It is used to determine how much work will be required to solve or work around a software issue.
+
+**Technical Spikes and Functional Spikes**
+Spikes primarily come in two forms: technical and functional. A distinction can be made between technical spikes and functional spikes:
+
+**Technical Spike**
+The technical spike is used more often for evaluating the impact new technology has on the current implementation that the team needs experiment a new technology to gain more confident for a desired approach before committing new functionality to a timebox.
+
+i.e. “how long it takes to update a customer display to current usage, determining communication requirements, bandwidth, and whether to push or pull the data”
+
+**Functional Spike**
+A functional spike are used whenever there is significant uncertainty as to how a user might interact with the system. Functional spikes are often best evaluated through some level of prototyping, whether it be user interface mockups, wireframes, page flows, or whatever techniques is best suited to get feedback from the customer or stakeholders.,
