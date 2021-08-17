@@ -201,3 +201,98 @@ storageclasses                    sc           storage.k8s.io/v1                
 volumeattachments                              storage.k8s.io/v1                      false        VolumeAttachment
 </pre>
 
+# Working with Nodes:
+
+## Getting a list of Nodes:
+
+<pre><font color="#8AE234"><b>vagrant@Yoshitaka-Zombie</b></font>:<font color="#729FCF"><b>~</b></font>$ kubectl get nodes
+NAME                            STATUS   ROLES                  AGE   VERSION
+k8s-playground-control-plane    Ready    control-plane,master   5d    v1.21.1
+k8s-playground-control-plane2   Ready    control-plane,master   5d    v1.21.1
+k8s-playground-control-plane3   Ready    control-plane,master   5d    v1.21.1
+k8s-playground-worker           Ready    &lt;none&gt;                 5d    v1.21.1
+k8s-playground-worker2          Ready    &lt;none&gt;                 5d    v1.21.1
+k8s-playground-worker3          Ready    &lt;none&gt;                 5d    v1.21.1
+</pre>
+
+## Describing Nodes:
+
+<pre><font color="#8AE234"><b>vagrant@Yoshitaka-Zombie</b></font>:<font color="#729FCF"><b>~</b></font>$ kubectl describe node k8s-playground-control-plane
+Name:               k8s-playground-control-plane
+Roles:              control-plane,master
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/os=linux
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=k8s-playground-control-plane
+                    kubernetes.io/os=linux
+                    node-role.kubernetes.io/control-plane=
+                    node-role.kubernetes.io/master=
+                    node.kubernetes.io/exclude-from-external-load-balancers=
+Annotations:        kubeadm.alpha.kubernetes.io/cri-socket: unix:///run/containerd/containerd.sock
+                    node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Thu, 12 Aug 2021 12:08:25 +0000
+Taints:             node-role.kubernetes.io/master:NoSchedule
+Unschedulable:      false
+Lease:
+  HolderIdentity:  k8s-playground-control-plane
+  AcquireTime:     &lt;unset&gt;
+  RenewTime:       Tue, 17 Aug 2021 12:37:26 +0000
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Tue, 17 Aug 2021 12:36:06 +0000   Thu, 12 Aug 2021 12:08:24 +0000   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Tue, 17 Aug 2021 12:36:06 +0000   Thu, 12 Aug 2021 12:08:24 +0000   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Tue, 17 Aug 2021 12:36:06 +0000   Thu, 12 Aug 2021 12:08:24 +0000   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Tue, 17 Aug 2021 12:36:06 +0000   Thu, 12 Aug 2021 12:08:57 +0000   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:  172.18.0.3
+  Hostname:    k8s-playground-control-plane
+Capacity:
+  cpu:                2
+  ephemeral-storage:  64284292Ki
+  hugepages-2Mi:      0
+  memory:             8091872Ki
+  pods:               110
+Allocatable:
+  cpu:                2
+  ephemeral-storage:  64284292Ki
+  hugepages-2Mi:      0
+  memory:             8091872Ki
+  pods:               110
+System Info:
+  Machine ID:                 2e041e3053b04b09b857391a8a911a3f
+  System UUID:                6e931101-506f-4f4c-ac52-e163c07a4c8b
+  Boot ID:                    7ab66815-f155-46e5-8e88-cc4a74f50e8c
+  Kernel Version:             5.4.0-58-generic
+  OS Image:                   Ubuntu 21.04
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  containerd://1.5.2
+  Kubelet Version:            v1.21.1
+  Kube-Proxy Version:         v1.21.1
+PodCIDR:                      10.244.0.0/24
+PodCIDRs:                     10.244.0.0/24
+ProviderID:                   kind://docker/k8s-playground/k8s-playground-control-plane
+Non-terminated Pods:          (9 in total)
+  Namespace                   Name                                                    CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                                                    ------------  ----------  ---------------  -------------  ---
+  kube-system                 coredns-558bd4d5db-btvx6                                100m (5%)     0 (0%)      70Mi (0%)        170Mi (2%)     5d
+  kube-system                 coredns-558bd4d5db-sc52x                                100m (5%)     0 (0%)      70Mi (0%)        170Mi (2%)     5d
+  kube-system                 etcd-k8s-playground-control-plane                       100m (5%)     0 (0%)      100Mi (1%)       0 (0%)         5d
+  kube-system                 kindnet-gqt9k                                           100m (5%)     100m (5%)   50Mi (0%)        50Mi (0%)      5d
+  kube-system                 kube-apiserver-k8s-playground-control-plane             250m (12%)    0 (0%)      0 (0%)           0 (0%)         5d
+  kube-system                 kube-controller-manager-k8s-playground-control-plane    200m (10%)    0 (0%)      0 (0%)           0 (0%)         5d
+  kube-system                 kube-proxy-r4ktn                                        0 (0%)        0 (0%)      0 (0%)           0 (0%)         5d
+  kube-system                 kube-scheduler-k8s-playground-control-plane             100m (5%)     0 (0%)      0 (0%)           0 (0%)         5d
+  local-path-storage          local-path-provisioner-547f784dff-ksvzg                 0 (0%)        0 (0%)      0 (0%)           0 (0%)         5d
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests    Limits
+  --------           --------    ------
+  cpu                950m (47%)  100m (5%)
+  memory             290Mi (3%)  390Mi (4%)
+  ephemeral-storage  100Mi (0%)  0 (0%)
+  hugepages-2Mi      0 (0%)      0 (0%)
+Events:              &lt;none&gt;
+</pre>
