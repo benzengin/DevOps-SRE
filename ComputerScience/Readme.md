@@ -41,4 +41,6 @@ A penetration test, colloquially known as a pen test, pentest or ethical hacking
 
 A permalink or permanent link is a URL that is intended to remain unchanged for many years into the future, yielding a hyperlink that is less susceptible to link rot. Permalinks are often rendered simply, that is, as clean URLs, to be easier to type and remember.
 
+# What is SPIKE (software engineering)
 
+A spike is a product development method originating from Extreme Programming that uses the simplest possible program to explore potential solutions. It is used to determine how much work will be required to solve or work around a software issue.
