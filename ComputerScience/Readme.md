@@ -36,3 +36,9 @@ Pair programming is an agile software development technique in which two program
 
 
 A penetration test, colloquially known as a pen test, pentest or ethical hacking, is an authorized simulated cyberattack on a computer system, performed to evaluate the security of the system; this is not to be confused with a vulnerability assessment.
+
+# What are permalinks?
+
+A permalink or permanent link is a URL that is intended to remain unchanged for many years into the future, yielding a hyperlink that is less susceptible to link rot. Permalinks are often rendered simply, that is, as clean URLs, to be easier to type and remember.
+
+
