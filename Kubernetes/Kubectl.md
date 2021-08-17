@@ -101,4 +101,7 @@ replace: Replace a resource by filename or stdin.
 wait: Wait for a specific condition on one or many resources.
 
 convert: Convert config files between different API versions.
+
+kustomize: Build a kustomization target from a directory or a remote URL.
+
 </pre>
