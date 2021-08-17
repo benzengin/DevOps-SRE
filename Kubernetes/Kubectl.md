@@ -47,3 +47,58 @@ scale: Set a new size for a deployment, ReplicaSet, or StatefulSet.
 autoscale: Auto-scale a deployment, ReplicaSet, or StatefulSet.
 
 </pre>
+
+<pre>CLUSTER MANAGEMENT COMMANDS:
+
+The following are the kubectl cluster management commands:
+
+certificate: Modify certificate resources.
+
+cluster-info: Display cluster information.
+
+top: Display resource (CPU/memory/storage) usage.
+
+cordon: Mark a node as unschedulable.
+
+uncordon: Mark a node as schedulable.
+
+drain: Drain a node in preparation for maintenance.
+
+taint: Update the taints on one or more nodes.
+
+
+TROUBLESHOOOTING AND DEBUGGING COMMANDS:
+
+The following are the kubectl troubleshooting and debugging commands:
+
+describe: Show the details of a specific resource or group of resources.
+
+logs: Print the logs for a container in a pod.
+
+attach: Attach to a running container.
+
+exec: Execute a command in a container.port-forward: Forward one or more local ports to a pod.
+
+proxy: Run a proxy to the Kubernetes API server.
+
+cp: Copy files and directories to and from containers.
+
+auth: Inspect authorization.
+
+
+ADVANCED COMMANDS: 
+
+The following are the kubectl advanced commands:
+
+diff: Show difference of live version against a would-be applied version.
+
+apply: Apply a configuration to a resource by filename or stdin.
+
+patch: Update the field(s) of a resource using a strategic merge patch.
+
+replace: Replace a resource by filename or stdin.
+
+wait: Wait for a specific condition on one or many resources.
+
+convert: Convert config files between different API versions.
+</pre>
