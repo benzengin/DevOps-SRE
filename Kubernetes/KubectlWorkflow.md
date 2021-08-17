@@ -296,3 +296,6 @@ Allocated resources:
   hugepages-2Mi      0 (0%)      0 (0%)
 Events:              &lt;none&gt;
 </pre>
+
+## Displaying Node resource usage:
+
