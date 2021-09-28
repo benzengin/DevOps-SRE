@@ -56,3 +56,51 @@ Windows Autopilot is a collection of technologies used to set up and pre-configu
 
 Endpoint analytics is part of the Microsoft Productivity Score. These analytics give you insights for measuring how your organization is working and the quality of the experience you're delivering to your users. Endpoint analytics can help identify policies or hardware issues that may be slowing down devices and help you proactively make improvements before end-users generate a help desk ticket.
 
+# Architecture for MECM and Intune:
+
+**What makes a Site System Server?
+
+DEFAULT ROLES:
+
+Component Server
+
+Site Database Server
+
+Site Server
+
+Site System
+
+SMS Provider
+
+OPTIONAL ROLES:
+
+
+OPTIONAL ROLES:
+
+Asset Intellgence Synchroization Point
+
+Certificate Registration Point
+
+CMG Connection Point
+
+Data Warehouse Service Point
+
+Distrubtion Point
+
+Endpoint Protection Point
+
+Entrollment Point and Entrollment Proxy Point
+
+Fallback Status Point
+
+Management Point 
+
+Service Connection Point
+
+Software Update Point
+
+State Migration Point
+
+
+
+
