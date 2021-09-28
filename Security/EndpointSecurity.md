@@ -1,3 +1,11 @@
+# What is MDM?
+
+Windows device management enables IT admins to simplify the management of Windows devices used in an enterprise by implementing a Windows MDM solution to secure, manage and monitor these devices. Windows mobile device management helps IT admins to enroll devices, assign them to users, distribute apps and content to them, and enforce security policies on them to prevent data leaks.
+
+# What is Windows MDT/WDS?
+
+You can save time by using the Microsoft Deployment Toolkit (MDT) and Windows Deployment Services (WDS) to deploy Windows client OS from your Windows Server across your network.
+
 # What is Endpoint Protection?
 
 1. Security
