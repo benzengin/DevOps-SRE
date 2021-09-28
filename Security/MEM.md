@@ -40,5 +40,9 @@ on all of their devices while keeping your organization’s information protecte
 
 -Deploy Operating Systems
 
+# What is Microsoft Endpoint Manager?
+
+A unified platform including both Configuration Manager and Microsoft Intune.
+
 
 
