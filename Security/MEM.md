@@ -10,3 +10,23 @@ Intune is part of Microsoft's Enterprise Mobility + Security (EMS) suite. Intune
 access and what they can access. It also integrates with Azure Information Protection for data protection. It can be used with the Microsoft 365 suite of products. 
 For example, you can deploy Microsoft Teams, OneNote, and other Microsoft 365 apps to devices. This feature enables people in your organization to be productive 
 on all of their devices while keeping your organization’s information protected with the policies you create.
+# The Use Cases for MEM and Intune?
+
+**MECM:**
+Deploy Applications
+Perform Device Configurations
+Enforce Secure Configurations
+Enforce Compliance
+Deliver Microsoft Updates
+Deploy Operating Systems
+
+**Intune:**
+Deploy Applications
+Perform Device Configurations
+Enforce Secure Configurations
+Enforce Compliance
+Deliver Microsoft Updates
+Deploy Operating Systems
+
+
+
