@@ -6,6 +6,10 @@ Windows device management enables IT admins to simplify the management of Window
 
 You can save time by using the Microsoft Deployment Toolkit (MDT) and Windows Deployment Services (WDS) to deploy Windows client OS from your Windows Server across your network.
 
+# What is Active Directory Certificate Services (AD CS)?
+
+According to Microsoft, AD CS is the “Server Role that allows you to build a public key infrastructure (PKI) and provide public key cryptography, digital certificates, and digital signature capabilities for your organization.”
+
 # What is Endpoint Protection?
 
 1. Security
