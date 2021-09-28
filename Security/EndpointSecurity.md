@@ -10,6 +10,10 @@ You can save time by using the Microsoft Deployment Toolkit (MDT) and Windows De
 
 According to Microsoft, AD CS is the “Server Role that allows you to build a public key infrastructure (PKI) and provide public key cryptography, digital certificates, and digital signature capabilities for your organization.”
 
+# What is Master Data Management Concept?
+
+Master Data Management (MDM) is the technology, tools and processes that ensure master data is coordinated across the enterprise. MDM provides a unified master data service that provides accurate, consistent and complete master data across the enterprise and to business 
+
 # What is Endpoint Protection?
 
 1. Security
