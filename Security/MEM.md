@@ -44,5 +44,15 @@ on all of their devices while keeping your organization’s information protecte
 
 A unified platform including both Configuration Manager and Microsoft Intune.
 
+# What is Microsoft Desktop Analytics?
 
+Desktop Analytics is a cloud-based service that integrates with Configuration Manager. The service provides insight and intelligence for you to make more informed decisions about the update readiness of your Windows clients. It combines data from your organization with data aggregated from millions of devices connected to Microsoft cloud services.
+
+# What is Microsoft Autopilot?
+
+Windows Autopilot is a collection of technologies used to set up and pre-configure new devices, getting them ready for productive use. Windows Autopilot can be used to deploy Windows PCs or HoloLens 2 devices.
+
+# What is Endpoint Analytics?
+
+Endpoint analytics is part of the Microsoft Productivity Score. These analytics give you insights for measuring how your organization is working and the quality of the experience you're delivering to your users. Endpoint analytics can help identify policies or hardware issues that may be slowing down devices and help you proactively make improvements before end-users generate a help desk ticket.
 
