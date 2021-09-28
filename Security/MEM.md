@@ -60,7 +60,7 @@ Endpoint analytics is part of the Microsoft Productivity Score. These analytics 
 
 **What makes a Site System Server?
 
-DEFAULT ROLES:
+1.) DEFAULT ROLES:
 
 Component Server
 
@@ -72,10 +72,8 @@ Site System
 
 SMS Provider
 
-OPTIONAL ROLES:
 
-
-OPTIONAL ROLES:
+2.) OPTIONAL ROLES:
 
 Asset Intellgence Synchroization Point
 
