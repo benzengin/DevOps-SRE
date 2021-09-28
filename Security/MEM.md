@@ -13,20 +13,32 @@ on all of their devices while keeping your organization’s information protecte
 # The Use Cases for MEM and Intune?
 
 **MECM:**
-Deploy Applications
-Perform Device Configurations
-Enforce Secure Configurations
-Enforce Compliance
-Deliver Microsoft Updates
-Deploy Operating Systems
+
+-Deploy Applications
+
+-Perform Device Configurations
+
+-Enforce Secure Configurations
+
+-Enforce Compliance
+
+-Deliver Microsoft Updates
+
+-Deploy Operating Systems
 
 **Intune:**
-Deploy Applications
-Perform Device Configurations
-Enforce Secure Configurations
-Enforce Compliance
-Deliver Microsoft Updates
-Deploy Operating Systems
+
+-Deploy Applications
+
+-Perform Device Configurations
+
+-Enforce Secure Configurations
+
+-Enforce Compliance
+
+-Deliver Microsoft Updates
+
+-Deploy Operating Systems
 
 
 
